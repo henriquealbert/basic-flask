@@ -28,7 +28,7 @@ app.debug = IS_DEV
 def hello_world():
     log_func = logger.debug if IS_DEV else logger.info
     log_func(f"Hello endpoint was called in {ENV} mode")
-    return "<p>Hello from Flask</p>"
+    return "<p>Hello from Flask 2!</p>"
 
 if __name__ == "__main__":
     host = "localhost" if IS_DEV else "0.0.0.0"
